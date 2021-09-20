@@ -1,16 +1,23 @@
+html {
+    min-height: 100vh;
+    background-image: url('../resources/background-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .card {
+    color: #FFF;
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-items: center;    
     justify-content: space-around;
     margin: 20px auto;
     min-height: 200px;
     min-width: 200px;
     max-width: 25%;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -21,6 +28,7 @@ button {
     background-color: #66b3ff;
     border: none;
     border-radius: 5px;
+    text-align: center;
 }
 button:hover {
     background-color: #0066cc;
@@ -28,7 +36,4 @@ button:hover {
 }
 button:active{
     transform: translateY(1px);
-}
-p {
-    text-align: center;
 }
