@@ -37,3 +37,6 @@ button:hover {
 button:active{
     transform: translateY(1px);
 }
+#demo1 {
+    text-transform: lowercase;
+}
