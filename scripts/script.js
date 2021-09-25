@@ -1,28 +1,9 @@
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
-let para1 = document.getElementById('demo1');
-let para2 = document.getElementById('demo2');
+const btn3 = document.getElementById('btn3');
+const btn4 = document.getElementById('btn4');
+const btn5 = document.getElementById('btn5');
+const btn6 = document.getElementById('btn6');
+const agentName = document.getElementById('agentName');
+let para1 = document.getElementById('first-content');
 
-btn1.onclick = displayFizzBuzz;
-btn2.onclick = resetPara;
-
-function resetPara(){
-    para1.innerHTML = '';
-    para2.innerHTML = '';
-}
-function displayFizzBuzz(){
-    let count = 100;
-    para1.innerHTML = '<ul>';
-    for (let i = 1; i <= count; i++){
-        if (i % 3 === 0 && i % 5 === 0){
-            para1.innerHTML += '<li>FizzBuzz</li>';
-        } else if (i % 3 === 0){
-            para1.innerHTML += '<li>Fizz</li>';
-        } else if (i % 5 === 0){
-            para1.innerHTML += '<li>Buzz</li>';
-        } else {
-            para1.innerHTML += `<li>${i}</li>`;
-        }
-    }
-    para1.innerHTML += '</ul>';
-}
