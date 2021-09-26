@@ -4,6 +4,6 @@ const btn3 = document.getElementById('btn3');
 const btn4 = document.getElementById('btn4');
 const btn5 = document.getElementById('btn5');
 const btn6 = document.getElementById('btn6');
-const agentName = document.getElementById('agentName');
-let para1 = document.getElementById('first-content');
+const form1 = document.getElementById('form1');
 
+let div = document.querySelector('#demo-div');
