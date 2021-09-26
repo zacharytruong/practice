@@ -1,18 +1,13 @@
 html {
-    min-height: 100vh;
-    background-color: #FF9A8B;
-    background-image: linear-gradient(207deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-
-    /*
-    background-image: url(./../resources/main-background.jpg);
+    min-height: 100vh;    
+    background-image: url(./../resources/background-2.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    */
+    
     }
 .card {
     text-align: center;
-    color: #FFF;
     margin: 20px auto;
     padding: 30px;
     background: rgba( 255, 255, 255, 0.4 );
@@ -30,11 +25,8 @@ html {
     margin: 20px auto;
     min-height: calc(100vh - 40px);
 }
-form label span{
-    color: #000;
-}
 button,
-#form1Submit,
+input[type='submit'],
 #soundFile::file-selector-button,
 #videoFile::file-selector-button,
 #imageFile::file-selector-button {
@@ -46,7 +38,7 @@ button,
     border: 1px solid #000;
 }
 button:hover,
-#form1Submit:hover,
+input[type='submit']:hover,
 #soundFile::file-selector-button:hover,
 #videoFile::file-selector-button:hover,
 #imageFile::file-selector-button:hover {
@@ -56,26 +48,10 @@ button:hover,
     transition: 500ms;
 }
 button:active,
-#form1Submit:active,    
+input[type='submit']:active,
 #soundFile::file-selector-button:hover,
 #videoFile::file-selector-button:hover,
 #imageFile::file-selector-button:hover{
     transform: translateY(5px);
     transition: 100ms;
 }
-.form-input {
-    margin: 20px;
-}
-#first-content {
-    color: #000F;
-    list-style: inside
-}
-
-.foo{
-    background-color:red;
-    padding:10px;
-  }
-  #bar{
-    border:10px solid #000;
-    margin:10px;
-  }

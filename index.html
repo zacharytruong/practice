@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>build this webpage - Google</title>
         <link rel="stylesheet" href="styles/reset.css">
@@ -10,6 +10,7 @@
             rel="stylesheet"
         />
         <meta charset="UTF-8">
+        <script src="scripts/script.js" defer></script>
     </head>
     <body>
         <div class='container'>
@@ -18,32 +19,33 @@
                     <p>
                         <label for="soundFile">What does your voice sound like?:</label>
                         <input type="file" id="soundFile" capture="user" accept="audio/*">
-                        </p>
-                        <p>
+                        <input type="submit">
+                    </p>
+                    <p>
                         <label for="videoFile">Upload a video:</label>
                         <input type="file" id="videoFile" capture="environment" accept="video/*">
-                        </p>
-                        <p>
+                        <input type="submit">
+                    </p>
+                    <p>
                         <label for="imageFile">Upload a photo of yourself:</label>
                         <input type="file" id="imageFile" capture="user" accept="image/*">
+                        <input type="submit">
                     </p>
                     <form>
-                        <label for="form1" draggable="true"><span>Classic Form:</span></label>
+                        <label for="form1"><span>Form:</span></label>
                         <input class="form-input" type="text" id="form1" name="form1" required="required">
-                        <input type="submit" id='form1Submit'>
+                        <input type="submit">
                     </form>
-                    <button id='btn1'>Button 1</button>           
                 </div>
                 <div>
+                    <button id='btn1'>Button 1</button>
                     <button id='btn2'>Button 2</button>
                     <button id='btn3'>Button 3</button>
                     <button id='btn4'>Button 4</button>
                     <button id='btn5'>Button 5</button>
-                    <button id='btn6'>Reset</button>
                 </div>
                 <div id="demo-div"></div>            
             </div>
         </div>
-        <script src="scripts/script.js"></script>
     </body>
 </html>
