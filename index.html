@@ -13,41 +13,43 @@
   <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    <div class='container'>
-        <div class='card'>
-            <div>
-                <p>
-                    <label for="soundFile">What does your voice sound like?:</label>
-                    <input type="file" id="soundFile" capture="user" accept="audio/*">
-                    <input type="submit">
-                </p>
-                <p>
-                    <label for="videoFile">Upload a video:</label>
-                    <input type="file" id="videoFile" capture="environment" accept="video/*">
-                    <input type="submit">
-                </p>
-                <p>
-                    <label for="imageFile">Upload a photo of yourself:</label>
-                    <input type="file" id="imageFile" capture="user" accept="image/*">
-                    <input type="submit">
-                </p>
-                <form>
-                    <label for="form1"><span>Form:</span></label>
-                    <input class="form-input" type="text" id="form1" name="form1" required="required">
-                    <input type="submit">
-                </form>
-            </div>
-            <div>
-                <button id='btn1'>Button 1</button>
-                <button id='btn2'>Button 2</button>
-                <button id='btn3'>Button 3</button>
-                <button id='btn4'>Button 4</button>
-                <button id='btn5'>Button 5</button>
-            </div>
-            <div>
-                <ul id="demo-div"></ul>
-            </div>            
-        </div>
+<div class='container'>
+  <div class='card'>
+    <div>
+      <p>
+        <label for="soundFile">What does your voice sound like?:</label>
+        <input type="file" id="soundFile" capture="user" accept="audio/*">
+        <input type="submit">
+      </p>
+      <p>
+        <label for="videoFile">Upload a video:</label>
+        <input type="file" id="videoFile" capture="environment" accept="video/*">
+        <input type="submit">
+      </p>
+      <p>
+        <label for="imageFile">Upload a photo of yourself:</label>
+        <input type="file" id="imageFile" capture="user" accept="image/*">
+        <input type="submit">
+      </p>
+      <form>
+      <label for="form1"><span>Form:</span></label>
+      <input class="form-input" type="text" id="form1" name="form1" required="required">
+        <input type="submit">
+      </form>
     </div>
+    <div>
+      <button id='btn1'>Button 1</button>
+      <button id='btn2'>Button 2</button>
+      <button id='btn3'>Button 3</button>
+      <button id='btn4'>Button 4</button>
+      <button id='btn5'>Button 5</button>
+    </div>
+    <div>
+      <p><span id="one"></span></p>
+      <p><span id="two"></span></p>
+
+    </div>          
+  </div>
+</div>    
 </body>
 </html>

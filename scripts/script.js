@@ -7,17 +7,22 @@ const form1 = document.getElementById('form1');
 const div = document.querySelector('#demo-div');
 const buttons = document.querySelectorAll('button');
 
-btn1.addEventListener('click', addNode);
-function addNode(){
-    const node = document.createElement('li');
-    const nodeText = document.createTextNode('Mlem');
-    node.appendChild(nodeText);
-    div.appendChild(node);
+function time(name, action){
+  let start = Date.now();
+  action();
+  console.log(`${name} took ${Date.now() - start} ms.`);
 }
+time('naive', () => {
+  const one = document.getElementById('one');
+  while (one.offsetWidth < 2000){
+    let target = document.createTextNode('X');
+    one.appendChild(target);
+  }
+})
 
-btn2.addEventListener('click', resetNode);
-function resetNode(){
-    while (div.firstChild){
-        div.removeChild(div.firstChild);
-    }
-}
+time('clever', () => {
+  const two = document.getElementById('two');
+  two.appendChild(document.createTextNode('XXXXXXXXXX'));
+  let total = Math.ceil(2000 / (two.offsetWidth / 10))
+  two.firstChild.nodeValue = 'X'.repeat(total);
+})
