@@ -33,10 +33,14 @@ function asTabs(node){
   const buttons = Array.from(node.querySelectorAll('button'));
   buttons.forEach(showTabContent)
   function showTabContent(button){
-    button.addEventListener('click', showContent);
-    function showContent(e){
-      
-    }
+    button.addEventListener('click', e => {
+      tabs.forEach( tab => {
+        tab.style.display = 'none';
+        if (tab.getAttribute('data-tabname') === e.target.getAttribute('data-tabname')){
+          tab.style.display = 'block';
+        }
+      })
+    })
   }
 }
 asTabs(document.querySelector("tab-panel"));
