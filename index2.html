@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Practice</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+<body>
+<div class='container'>
+  <tab-panel>
+    <div data-tabname="one">Tab one</div>
+    <div data-tabname="two">Tab two</div>
+    <div data-tabname="three">Tab three</div>
+  </tab-panel>
+</div>
+<script>
+function asTabs(node){
+  // Create a list of tab buttons
+  const tabs = Array.from(node.querySelectorAll('div'));
+  let buttonDiv = document.createElement('div');
+  node.prepend(buttonDiv);
+  tabs.forEach(tab => {
+  let button = document.createElement('button');
+  button.setAttribute('data-tabname', tab.getAttribute('data-tabname'));
+  button.textContent = tab.getAttribute('data-tabname');
+  buttonDiv.appendChild(button);
+  if (tab != tabs[0]) tab.style.display = 'none';
+  })
+
+  // Display content for each tab per button
+  const buttons = Array.from(node.querySelectorAll('button'));
+  buttons.forEach(showTabContent)
+  function showTabContent(button){
+    button.addEventListener('click', e => {
+      tabs.forEach( tab => {
+        tab.style.display = 'none';
+        if (tab.getAttribute('data-tabname') === e.target.getAttribute('data-tabname')){
+          tab.style.display = 'block';
+        }
+      })
+    })
+  }
+}
+asTabs(document.querySelector("tab-panel"));
+</script>
+</body>
+</html>
