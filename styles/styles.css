@@ -1,57 +1,6 @@
 html {
-    min-height: 100vh;    
-    background-image: url(./../resources/background-2.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    
-    }
-.card {
-    text-align: center;
-    margin: 20px auto;
-    padding: 30px;
-    background: rgba( 255, 255, 255, 0.4 );
-    box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 8px );
-    -webkit-backdrop-filter: blur( 8px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-.container {    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 700px;
-    margin: 20px auto;
-    min-height: calc(100vh - 40px);
-}
-button,
-input[type='submit'],
-#soundFile::file-selector-button,
-#videoFile::file-selector-button,
-#imageFile::file-selector-button {
-    padding: 10px 20px;
-    margin: 10px;
-    text-align: center;
-    background-color: transparent;
-    color: #000;
-    border: 1px solid #000;
-}
-button:hover,
-input[type='submit']:hover,
-#soundFile::file-selector-button:hover,
-#videoFile::file-selector-button:hover,
-#imageFile::file-selector-button:hover {
-    background-color: #000;
-    color: #FFF;
-    cursor: pointer;
-    transition: 500ms;
-}
-button:active,
-input[type='submit']:active,
-#soundFile::file-selector-button:hover,
-#videoFile::file-selector-button:hover,
-#imageFile::file-selector-button:hover{
-    transform: translateY(5px);
-    transition: 100ms;
+  min-height: 100vh;
+  background: #FC466B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
